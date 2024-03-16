@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-  loadContent('../src/components/inicio/public/inicio.html');
+  loadContent('../src/components/public/inicio.html');
 
   // Manejar clics en los elementos del menú del encabezado
   var menuItems = document.querySelectorAll('header nav ul li a');
