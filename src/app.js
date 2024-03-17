@@ -8,21 +8,21 @@ document.addEventListener("DOMContentLoaded", function() {
       item.addEventListener('click', function(event) {
           event.preventDefault();
           var page = this.getAttribute('href');
-          loadContent(page); 
+          loadContent(page); // Utiliza la ruta relativa desde el index.html
       });
   });
 });
 
 function loadContent(page) {
   var contentContainer = document.getElementById("content");
-  contentContainer.innerHTML = ''; // Limpiar el contenedor antes de cargar el nuevo contenido
+  contentContainer.innerHTML = '';
 
-  var iframeElement = document.createElement('iframe');
-  iframeElement.setAttribute('src', page);
-  iframeElement.setAttribute('frameborder', '0'); // Elimina el borde del iframe
-  iframeElement.style.width = '100%';
-  iframeElement.style.height = '100%';
-  iframeElement.style.overflow = 'auto'; // Agrega scroll si el contenido es más grande que el iframe
+  var objectElement = document.createElement('object');
+  objectElement.setAttribute('type', 'text/html');
+  objectElement.setAttribute('data', page);
+  objectElement.setAttribute('width', '100%');
+  objectElement.setAttribute('height', '100%');
 
-  contentContainer.appendChild(iframeElement);
+  contentContainer.appendChild(objectElement);
 }
+
