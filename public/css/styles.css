@@ -109,3 +109,72 @@ h6 {
 .footer-container .social-media a:hover {
     color: #ccc;
 }
+
+
+.car-icon {
+    font-size: 24px; 
+  }
+
+.car-icon :hover {
+    color: #948d8d;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+  /* CSS personalizado */
+.card {
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: #f9f9f9; /* Agregamos un color de fondo */
+    margin-bottom: 30px;
+    width: 100%;
+}
+.card img {
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+.card-body {
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+.novedades-container .card {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.novedades-container .card img {
+    width: 100%;
+    height: auto;
+}
+
+.novedades-container .card-body {
+    padding: 20px;
+}
+
+.novedades-container .description {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.novedades-container .description h3 {
+    margin-top: 0;
+}
+
+.novedades-container .description p {
+    margin-bottom: 0;
+}
