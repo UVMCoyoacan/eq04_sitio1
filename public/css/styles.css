@@ -68,6 +68,17 @@
     color: #ccc;
 }
 
+.custom-btn {
+    background-color: #8858a3;
+    border-color: #8858a3;
+    color: white; 
+}
+
+.custom-btn:hover {
+    background-color: #8237ad;
+    border-color: #8237ad;
+}
+
 
 body,
 h1,
@@ -123,6 +134,8 @@ h6 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
   /* CSS personalizado */
@@ -153,11 +166,14 @@ h6 {
 .novedades-container .card {
     margin-bottom: 30px;
     width: 100%;
+    height: auto;
+    overflow: hidden; /* Para recortar las imágenes que sean demasiado grandes */
 }
 
 .novedades-container .card img {
     width: 100%;
-    height: auto;
+    object-fit: scale-down; 
+    max-height: 515px;
 }
 
 .novedades-container .card-body {
@@ -165,8 +181,7 @@ h6 {
 }
 
 .novedades-container .description {
-    background-color: black;
-    color: white;
+    color: black;
     padding: 10px;
     border-radius: 5px;
 }
@@ -177,4 +192,8 @@ h6 {
 
 .novedades-container .description p {
     margin-bottom: 0;
+}
+
+.novedades-container .card a {
+    text-decoration: none;
 }
