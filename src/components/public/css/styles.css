@@ -104,4 +104,59 @@ h6 {
     color: #ccc;
 }
 
-  
+.custom-section {
+    padding: 20px 0; /* Espaciado interno */
+}
+ 
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.col-md-6 {
+    width: 45%; /* Ancho del contenedor de la imagen y el texto */
+}
+ 
+.col-md-6 img {
+    max-width: 100%; /* Asegura que la imagen no supere el ancho del contenedor */
+    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+}
+
+.col-md-6-filosofia{
+    width: 30%; /* Ancho del contenedor de la imagen y el texto */
+}
+
+.col-md-6-filosofia-texto{
+    width: 40%; /* Ancho del contenedor de la imagen y el texto */
+    margin-right: 20%;
+}
+
+.col-md-6-filosofia h3{ 
+    max-width: 100%; /* Asegura que la imagen no supere el ancho del contenedor */
+    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+    text-align: end;
+}
+ 
+.img-container {
+    display: flex;
+    justify-content: flex-start;
+}
+ 
+.img-container img {
+    max-width: 100%; /* Asegura que la imagen no supere el ancho del contenedor */
+}
+ 
+.text-container {
+    text-align: justify;
+}
+ 
+.text-justify {
+    text-align: justify;
+}
+ 
+.row-us{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
