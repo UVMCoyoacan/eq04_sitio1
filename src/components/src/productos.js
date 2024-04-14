@@ -1,27 +1,4 @@
 
-document.addEventListener('DOMContentLoaded', function () {
-    const tituloCategoria = document.getElementById('categoria-titulo');
-  
-    const categorias = document.querySelectorAll('.categoria');
-    categorias.forEach(categoria => {
-      categoria.addEventListener('click', function (event) {
-        event.preventDefault();
-        
-        categorias.forEach(categoria => {
-          categoria.classList.remove('active');
-        });
-        
-        this.classList.add('active');
-        tituloCategoria.textContent = this.dataset.categoria;
-      });
-    });
-  });
-  
-
-
-
-
-
 const productosPorCategoria = {
     "Oki Outfit": [
          {
@@ -190,53 +167,140 @@ const productosPorCategoria = {
           },
     ]
   };
-  
 
-  const contenedorCarruseles = document.querySelector('.w3-main');
 
-  for (const categoria in productosPorCategoria) {
-      const productos = productosPorCategoria[categoria];
-  
-      const carrusel = document.createElement('div');
-      carrusel.classList.add('carousel', 'slide');
-      carrusel.id = `${categoria}-carousel`;
-  
-      let innerHTML = `
-          <h2 class="w3-text-teal" style="text-align: center; margin-top: 40px; margin-bottom: 20px;">${categoria}</h2>
-          <div class="carousel-inner">
-      `;
-  
-      for (let i = 0; i < productos.length; i += 3) {
-          innerHTML += `<div class="row">`;
-  
-          for (let j = i; j < i + 3; j++) {
-              const producto = productos[j];
-              if (producto) {
-                  innerHTML += `
-                      <div class="col-md-4">
-                          <div class="card">
-                              <img src="${producto.imagen}" alt="${producto.nombre}">
-                              <div class="card-body">
-                                  <h3>${producto.nombre}</h3>
-                                  <p class="card-text">${producto.categoria}</p>
-                                  <a href="#" class="fa fa-shopping-cart car-icon" aria-hidden="true"></a>
-                              </div>
-                          </div>
-                      </div>
-                  `;
-              } else {
-                  innerHTML += `
-                      <div class="col-md-4">
-                      </div>
-                  `;
-              }
-          }
-  
-          innerHTML += `</div>`;
-      }
-  
-      innerHTML += `</div></div>`;
-      carrusel.innerHTML = innerHTML;
-      contenedorCarruseles.appendChild(carrusel);
+
+document.addEventListener('DOMContentLoaded', function () { 
+    const categorias = document.querySelectorAll('.categoria');
+    categorias.forEach(categoria => {
+      categoria.addEventListener('click', function (event) {
+        event.preventDefault();
+        
+        categorias.forEach(categoria => {
+          categoria.classList.remove('active');
+        });
+        
+        this.classList.add('active');
+        loadCategory(this.dataset.categoria);
+      });
+    });
+  });
+
+function renderCarrusel(categoria, productos) {
+    const contenedorCarruseles = document.querySelector('.products');
+    const carrusel = document.createElement('div');
+    carrusel.classList.add('carousel', 'slide');
+    carrusel.id = `${categoria}-carousel`;
+
+    let innerHTML = `
+        <h2 class="w3-text-teal" style="text-align: center; margin-top: 40px; margin-bottom: 20px;">${categoria}</h2>
+        <div class="carousel-inner">
+    `;
+
+    for (let i = 0; i < productos.length; i += 3) {
+        innerHTML += `<div class="row">`;
+
+        for (let j = i; j < i + 3; j++) {
+            const producto = productos[j];
+            if (producto) {
+                innerHTML += `
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="${producto.imagen}" alt="${producto.nombre}">
+                            <div class="card-body">
+                                <h3>${producto.nombre}</h3>
+                                <p class="card-text">${producto.categoria}</p>
+                                <a href="#" class="fa fa-shopping-cart car-icon" aria-hidden="true"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                `;
+            } else {
+                innerHTML += `
+                    <div class="col-md-4">
+                    </div>
+                `;
+            }
+        }
+
+        innerHTML += `</div>`;
+    }
+
+    innerHTML += `</div></div> <hr>`;
+    carrusel.innerHTML = innerHTML;
+    contenedorCarruseles.innerHTML = '';
+    contenedorCarruseles.appendChild(carrusel);
 }
   
+  function renderCarruseles() {
+    const contenedorCarruseles = document.querySelector('.products');
+
+    for (const categoria in productosPorCategoria) {
+        const productos = productosPorCategoria[categoria];
+
+        const carrusel = document.createElement('div');
+        carrusel.classList.add('carousel', 'slide');
+        carrusel.id = `${categoria}-carousel`;
+
+        let innerHTML = `
+            <h2 class="w3-text-teal product-title" style="text-align: center; margin-top: 40px; margin-bottom: 20px;">${categoria}</h2>
+            <div class="carousel-inner">
+        `;
+
+        for (let i = 0; i < productos.length; i += 3) {
+            innerHTML += `<div class="row">`;
+
+            for (let j = i; j < i + 3; j++) {
+                const producto = productos[j];
+                if (producto) {
+                    innerHTML += `
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="${producto.imagen}" alt="${producto.nombre}">
+                                <div class="card-body">
+                                    <h3>${producto.nombre}</h3>
+                                    <p class="card-text">${producto.categoria}</p>
+                                    <a href="#" class="fa fa-shopping-cart car-icon" aria-hidden="true"></a>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                } else {
+                    innerHTML += `
+                        <div class="col-md-4">
+                        </div>
+                    `;
+                }
+            }
+
+            innerHTML += `</div>`;
+        }
+
+        innerHTML += `</div></div> <hr>`;
+        carrusel.innerHTML = innerHTML;
+        contenedorCarruseles.appendChild(carrusel);
+    }
+}
+
+renderCarruseles();
+
+
+
+function loadCategory(categoria) {
+    switch (categoria) {
+        case "Oki Outfit":
+            renderCarrusel(categoria, productosPorCategoria[categoria]);
+            break;
+        case "Oki Fanmade":
+            renderCarrusel(categoria, productosPorCategoria[categoria]);
+            break;
+        case "Merch Oficial":
+            renderCarrusel(categoria, productosPorCategoria[categoria]);
+            break;
+        default:
+            renderCarruseles();
+            break;
+    }
+}
+
