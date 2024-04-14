@@ -104,3 +104,129 @@ h6 {
     color: #ccc;
 }
 
+
+.car-icon {
+    font-size: 24px; 
+  }
+
+.car-icon :hover {
+    color: #948d8d;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+  /* CSS personalizado */
+.card {
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: #f9f9f9; /* Agregamos un color de fondo */
+    margin-bottom: 30px;
+    width: 100%;
+}
+.card img {
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+.card-body {
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+.novedades-container .card {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.novedades-container .card img {
+    width: 100%;
+    height: auto;
+}
+
+.novedades-container .card-body {
+    padding: 20px;
+}
+
+.novedades-container .description {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.novedades-container .description h3 {
+    margin-top: 0;
+}
+
+.novedades-container .description p {
+    margin-bottom: 0;
+}
+
+.custom-section {
+    padding: 20px 0; /* Espaciado interno */
+}
+ 
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.col-md-6 {
+    width: 45%; /* Ancho del contenedor de la imagen y el texto */
+}
+ 
+.col-md-6 img {
+    max-width: 100%; /* Asegura que la imagen no supere el ancho del contenedor */
+    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+}
+
+.col-md-6-filosofia{
+    width: 30%; /* Ancho del contenedor de la imagen y el texto */
+}
+
+.col-md-6-filosofia-texto{
+    width: 40%; /* Ancho del contenedor de la imagen y el texto */
+    margin-right: 20%;
+}
+
+.col-md-6-filosofia h3{ 
+    max-width: 100%; /* Asegura que la imagen no supere el ancho del contenedor */
+    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+    text-align: end;
+}
+ 
+.img-container {
+    display: flex;
+    justify-content: flex-start;
+}
+ 
+.img-container img {
+    max-width: 100%; /* Asegura que la imagen no supere el ancho del contenedor */
+}
+ 
+.text-container {
+    text-align: justify;
+}
+ 
+.text-justify {
+    text-align: justify;
+}
+ 
+.row-us{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
