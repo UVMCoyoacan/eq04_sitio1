@@ -95,6 +95,9 @@ h6 {
 .footer-container .social-media {
     margin-left: auto; 
 }
+.footer-container .social-media ul a {
+    font-size: 24px;
+}
 .footer-container .social-media a {
     text-decoration: none;
     color: #333;
@@ -106,34 +109,39 @@ h6 {
 
 
 .car-icon {
+    color: #000;
+    align-items: start;
     font-size: 24px; 
   }
 
 .car-icon :hover {
-    color: #948d8d;
+    color: #8036aa;
   }
 
   .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
-  /* CSS personalizado */
 .card {
     margin-top: 10px;
     border-radius: 10px;
     border: 1px solid #ddd;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    background-color: #f9f9f9; /* Agregamos un color de fondo */
+    background-color: #f9f9f9; 
     margin-bottom: 30px;
     width: 100%;
+    height: 90%;
 }
 .card img {
     width: 70%;
     display: block;
     margin: auto;
+    object-fit: cover; 
 }
 .card-body {
     text-align: center;
@@ -143,38 +151,8 @@ h6 {
     transform: scale(1.05);
 }
 
-
-.novedades-container .card {
-    margin-bottom: 30px;
-    width: 100%;
-}
-
-.novedades-container .card img {
-    width: 100%;
-    height: auto;
-}
-
-.novedades-container .card-body {
-    padding: 20px;
-}
-
-.novedades-container .description {
-    background-color: black;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.novedades-container .description h3 {
-    margin-top: 0;
-}
-
-.novedades-container .description p {
-    margin-bottom: 0;
-}
-
 .custom-section {
-    padding: 20px 0; /* Espaciado interno */
+    padding: 20px 0;
 }
  
 .container {
@@ -184,26 +162,26 @@ h6 {
 }
  
 .col-md-6 {
-    width: 45%; /* Ancho del contenedor de la imagen y el texto */
+    width: 45%; 
 }
  
 .col-md-6 img {
-    max-width: 100%; /* Asegura que la imagen no supere el ancho del contenedor */
-    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+    max-width: 100%; 
+    height: auto; 
 }
 
 .col-md-6-filosofia{
-    width: 30%; /* Ancho del contenedor de la imagen y el texto */
+    width: 30%;
 }
 
 .col-md-6-filosofia-texto{
-    width: 40%; /* Ancho del contenedor de la imagen y el texto */
+    width: 40%; 
     margin-right: 20%;
 }
 
 .col-md-6-filosofia h3{ 
-    max-width: 100%; /* Asegura que la imagen no supere el ancho del contenedor */
-    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+    max-width: 100%; 
+    height: auto; 
     text-align: end;
 }
  
@@ -213,7 +191,7 @@ h6 {
 }
  
 .img-container img {
-    max-width: 100%; /* Asegura que la imagen no supere el ancho del contenedor */
+    max-width: 100%; 
 }
  
 .text-container {
@@ -230,3 +208,41 @@ h6 {
     justify-content: space-between;
 }
 
+
+.nav-categories {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.nav-categories ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+.nav-categories ul li {
+    background-color: #03b3a1;
+    display: inline;
+    margin-right: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .nav-categories ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-categories ul li a {
+    text-decoration: none;
+    color:#ffffff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-categories nav ul li:hover {
+    background-color: #009688;
+  }
+
+  .nav-categories .active {
+    font-weight: bold;
+}

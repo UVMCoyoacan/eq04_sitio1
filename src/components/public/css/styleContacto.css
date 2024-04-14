@@ -134,6 +134,9 @@ button:hover {
 .footer-container .social-media {
     margin-left: auto; 
 }
+.footer-container .social-media ul a {
+    font-size: 24px;
+}
 .footer-container .social-media a {
     text-decoration: none;
     color: #333;
