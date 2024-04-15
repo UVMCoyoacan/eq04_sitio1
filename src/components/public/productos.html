@@ -69,6 +69,18 @@
       <div class="title">Oki Dokey Store</div>
       <div class="subtitle">Tienda K-pop</div>
     </div>
+    <div class="privacy-container">
+      <ul>
+          <li><a href="../../../public/docs/POLÍTICA DE LA TIENDA_Oki.pdf" onclick="showPdfModal(event, this)">Aviso de privacidad</a></li>
+          <li><a href="../../../public/docs/ENVIO Y DEVOLUCIONES_Oki.pdf" onclick="showPdfModal(event, this)">Política de envío y devoluciones</a></li>
+      </ul>
+    </div>
+    <div id="pdfModal" class="modal">
+      <div class="modal-content">
+          <span class="close" onclick="closePdfModal()">&times;</span>
+          <iframe id="pdfViewer" width="100%" height="100%" frameborder="0"></iframe>
+      </div>
+    </div>  
     <div class="social-media">
       <ul>
         <a href="#" class="fa fa-facebook-square "></a>
@@ -79,6 +91,7 @@
   </footer>
 
   <script src="../src/productos.js"></script>
+  <script src="../../app.js"></script>  
 
 </body>
 
