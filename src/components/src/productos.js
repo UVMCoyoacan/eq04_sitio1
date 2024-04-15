@@ -55,7 +55,7 @@ const productosPorCategoria = {
       imagen: "../../../public/img/Oki Outfit/HOPE.jpg",
       categoria: "Oki Outfit",
       precio: "$190.00",
-      descripcion: "Muestra tu apoyo incondicional a Hobi durante la era de 'Dynamite' con nuestra exclusiva 'Playera HOPE'! Esta playera no solo luce increíble, sino que también es una declaración de amor al talento y la energía de Hobi. Confeccionada con materiales de primera calidad, garantiza un ajuste cómodo y duradero. El diseño exclusivo de 'HOPE' destaca sobre un fondo vibrante, perfecto para expresar tu admiración por este talentoso artista. Disponible en una amplia gama de tallas, desde S hasta XXL, aseguramos que encontrarás el ajuste perfecto para ti. ¡No pierdas la oportunidad de añadir esta pieza única a tu colección de fanáticos de BTS!"
+      descripcion: "Muestra tu apoyo incondicional a Hobi durante la era de Dynamite con nuestra exclusiva Playera HOPE! Esta playera no solo luce increíble, sino que también es una declaración de amor al talento y la energía de Hobi. Confeccionada con materiales de primera calidad, garantiza un ajuste cómodo y duradero. El diseño exclusivo de HOPE destaca sobre un fondo vibrante, perfecto para expresar tu admiración por este talentoso artista. Disponible en una amplia gama de tallas, desde S hasta XXL, aseguramos que encontrarás el ajuste perfecto para ti. ¡No pierdas la oportunidad de añadir esta pieza única a tu colección de fanáticos de BTS!"
     },
     {
       nombre: "Playera Im The King",
@@ -76,14 +76,14 @@ const productosPorCategoria = {
       imagen: "../../../public/img/Oki Outfit/Jimin.jpg",
       categoria: "Oki Outfit",
       precio: "$190.00",
-      descripcion: "¡Lleva el estilo de BTS a tu guardarropa con nuestra playera blanca de Jimin! Destaca con su diseño exclusivo y demuestra tu apoyo al 'Jiminie'. ¡Compra ahora y hazlo tuyo!"
+      descripcion: "¡Lleva el estilo de BTS a tu guardarropa con nuestra playera blanca de Jimin! Destaca con su diseño exclusivo y demuestra tu apoyo al Jiminie. ¡Compra ahora y hazlo tuyo!"
     },
     {
       nombre: "Playera JK Seven",
       imagen: "../../../public/img/Oki Outfit/JK Seven.jpg",
       categoria: "Oki Outfit",
       precio: "$190.00",
-      descripcion: "¡Captura la esencia de Jungkook con nuestra Playera SEVEN JK Collage! En blanco puro, esta prenda presenta un collage inspirado en la canción 'SEVEN'. ¡Celebra el talento de Jungkook con estilo y consigue la tuya hoy mismo!"
+      descripcion: "¡Captura la esencia de Jungkook con nuestra Playera SEVEN JK Collage! En blanco puro, esta prenda presenta un collage inspirado en la canción SEVEN. ¡Celebra el talento de Jungkook con estilo y consigue la tuya hoy mismo!"
     },
     {
       nombre: "Playera Layover",
@@ -104,14 +104,14 @@ const productosPorCategoria = {
       imagen: "../../../public/img/Oki Outfit/SEVEN.jpg",
       categoria: "Oki Outfit",
       precio: "$190.00",
-      descripcion: "¡Dale un toque de SEVEN JK a tu estilo con nuestra playera negra exclusiva de Jungkook! Demuestra tu apoyo al 'Golden Maknae' con este diseño único. ¡Consíguela ahora!"
+      descripcion: "¡Dale un toque de SEVEN JK a tu estilo con nuestra playera negra exclusiva de Jungkook! Demuestra tu apoyo al Golden Maknae con este diseño único. ¡Consíguela ahora!"
     },
     {
       nombre: "Playera Stray Kids",
       imagen: "../../../public/img/Oki Outfit/Stray Kids.jpg",
       categoria: "Oki Outfit",
       precio: "$190.00",
-      descripcion: "La playera 'You Make Stray Kids Stay', blanca como la inspiración, es un lienzo vibrante para expresar lealtad y amor por la banda."
+      descripcion: "La playera You Make Stray Kids Stay, blanca como la inspiración, es un lienzo vibrante para expresar lealtad y amor por la banda."
     },
     {
       nombre: "Playera Suga",
@@ -139,28 +139,28 @@ const productosPorCategoria = {
       imagen: "../../../public/img/Oki Outfit/Yet To Come Black.jpg",
       categoria: "Oki Outfit",
       precio: "$190.00",
-      descripcion: "¡Mantén viva la llama de BTS con nuestra playera 'Yet To Come'! Disponible en blanco y negro, lleva contigo el legado de BTS mientras esperas su regreso. ¡Exprésate con estilo y mantén viva la emoción por lo que está por venir!"
+      descripcion: "¡Mantén viva la llama de BTS con nuestra playera Yet To Come! Disponible en blanco y negro, lleva contigo el legado de BTS mientras esperas su regreso. ¡Exprésate con estilo y mantén viva la emoción por lo que está por venir!"
     },
     {
       nombre: "Playera Yet To Come White",
       imagen: "../../../public/img/Oki Outfit/Yet To Come White.jpg",
       categoria: "Oki Outfit",
       precio: "$190.00",
-      descripcion: "¡Mantén viva la llama de BTS con nuestra playera 'Yet To Come'! Disponible en blanco y negro, lleva contigo el legado de BTS mientras esperas su regreso. ¡Exprésate con estilo y mantén viva la emoción por lo que está por venir!"
+      descripcion: "¡Mantén viva la llama de BTS con nuestra playera Yet To Come! Disponible en blanco y negro, lleva contigo el legado de BTS mientras esperas su regreso. ¡Exprésate con estilo y mantén viva la emoción por lo que está por venir!"
     },
     {
       nombre: "Playera Yoongi Collage",
       imagen: "../../../public/img/Oki Outfit/Yoongi Collage.jpg",
       categoria: "Oki Outfit",
       precio: "$190.00",
-      descripcion: "¡Despierta tu lado 'Suga Biased' con nuestra playera exclusiva! Con un diseño único dedicado a Yoongi, esta playera en negro&nbsp;te llevará al ritmo de su música. ¡Hazte con la tuya y muestra tu apoyo al talento de BTS!"
+      descripcion: "¡Despierta tu lado Suga Biased con nuestra playera exclusiva! Con un diseño único dedicado a Yoongi, esta playera en negro&nbsp;te llevará al ritmo de su música. ¡Hazte con la tuya y muestra tu apoyo al talento de BTS!"
     },
     {
       nombre: "Playera Yoongi Mandala",
       imagen: "../../../public/img/Oki Outfit/Yoongi Mandala.png",
       categoria: "Oki Outfit",
       precio: "$190.00",
-      descripcion: "¡Despierta tu lado 'Suga Biased' con nuestra playera exclusiva! Con un diseño único dedicado a Yoongi, esta playera en negro&nbsp;te llevará al ritmo de su música. ¡Hazte con la tuya y muestra tu apoyo al talento de BTS!"
+      descripcion: "¡Despierta tu lado Suga Biased con nuestra playera exclusiva! Con un diseño único dedicado a Yoongi, esta playera en negro&nbsp;te llevará al ritmo de su música. ¡Hazte con la tuya y muestra tu apoyo al talento de BTS!"
     }
   ],
   "Oki Fanmade": [
@@ -274,7 +274,7 @@ function renderCarrusel(categoria, productos) {
                             <div class="card-body">
                                 <h3>${producto.nombre}</h3>
                                 <p class="card-text">${producto.categoria}</p>
-                                <i class="fa fa-shopping-cart car-icon" aria-hidden="true" onclick="productoDetails(${j})"></i>
+                                <i class="fa fa-shopping-cart car-icon" aria-hidden="true" onclick="productoDetails('${producto.nombre}', '${producto.imagen}', '${producto.categoria}', '${producto.precio}', '${producto.descripcion}')"></i>
                             </div>
                         </div>
                     </div>
@@ -325,7 +325,7 @@ function renderCarrusel(categoria, productos) {
                                 <div class="card-body">
                                     <h3>${producto.nombre}</h3>
                                     <p class="card-text">${producto.categoria}</p>
-                                    <i class="fa fa-shopping-cart car-icon" aria-hidden="true" onclick="productoDetails(${j})"></i>
+                                    <i class="fa fa-shopping-cart car-icon" aria-hidden="true" onclick="productoDetails('${producto.nombre}', '${producto.imagen}', '${producto.categoria}', '${producto.precio}', '${producto.descripcion}')"></i>
                                 </div>
                             </div>
                         </div>
@@ -369,7 +369,7 @@ function loadCategory(categoria) {
 }
 
 
-function productoDetails(index) {
+function productoDetails2(index) {
 
   for (const categoria in productosPorCategoria) {
     const productos = productosPorCategoria[categoria];
@@ -400,6 +400,31 @@ function productoDetails(index) {
   }
 }
 
+
+function productoDetails(nombre, imagen, categoria, precio, descripcion) {
+
+  const modalContent = document.getElementById('product-detail-content');
+
+  const detalleHTML = `
+    <div class="card">
+      <img src="${imagen}" alt="${nombre}">
+      <div class="card-body">
+        <h3>${nombre}</h3>
+        <p class="card-text">${categoria}</p>
+        <p class="card-text"><strong>Precio:</strong> ${precio}</p>
+        <p class="card-text"> ${descripcion}</p>
+        <button type="button" class="btn btn-secondary" onclick="closeProductoModal()">Cerrar</button>
+      </div>
+    </div>
+  `;
+
+  // Insertar el contenido en el modal
+  modalContent.innerHTML = detalleHTML;
+
+  // Mostrar el modal
+  const modal = document.getElementById('product-detail-modal');
+  modal.style.display = 'block';
+}
 
 
 
