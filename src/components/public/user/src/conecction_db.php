@@ -29,7 +29,9 @@ function insertarDatos($correo, $contraseña) {
 function mostrarDatos() {
     $conn = OpenCon();
 
-    $sql = "SELECT * FROM datos";
+    $sql = "SELECT user_detail.*, user_role.tipo 
+            FROM user_detail 
+            INNER JOIN user_role ON user_detail.user_role_id = user_role.id";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
@@ -39,6 +41,8 @@ function mostrarDatos() {
                     <td>" . $row["id"]. "</td>
                     <td>" . $row["correo"]. "</td>
                     <td>" . $row["contraseña"]. "</td>
+                    <td>" . $row["fecha_registro"]. "</td>
+                    <td>" . $row["tipo"]. "</td>
                     <td>
                         <a href='?editar=" . $row["id"] . "' data-bs-toggle='modal' data-bs-target='#editarModal' style='text-decoration: none;'>
                             <i class='fa fa-pencil-square-o text-primary' aria-hidden='true' style=' font-size: 24px; margin-right: 15px'></i>

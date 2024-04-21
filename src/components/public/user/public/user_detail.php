@@ -68,6 +68,8 @@
                     <th>ID</th>
                     <th>Correo</th>
                     <th>Contraseña</th>
+                    <th>Fecha de Registro</th>
+                    <th>Role</th>
                     <th>Acciones</th>
                 </tr>
             </thead>
