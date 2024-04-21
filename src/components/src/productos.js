@@ -368,39 +368,6 @@ function loadCategory(categoria) {
     }
 }
 
-
-function productoDetails2(index) {
-
-  for (const categoria in productosPorCategoria) {
-    const productos = productosPorCategoria[categoria];
-  
-  const producto = productos[index]; // Obtenemos el objeto producto usando el índice
-
-  const modalContent = document.getElementById('product-detail-content');
-
-  const detalleHTML = `
-    <div class="card">
-      <img src="${producto.imagen}" alt="${producto.nombre}">
-      <div class="card-body">
-        <h3>${producto.nombre}</h3>
-        <p class="card-text">${producto.categoria}</p>
-        <p class="card-text"><strong>Precio:</strong> ${producto.precio}</p>
-        <p class="card-text"> ${producto.descripcion}</p>
-        <button type="button" class="btn btn-secondary" onclick="closeProductoModal()">Cerrar</button>
-      </div>
-    </div>
-  `;
-
-  // Insertar el contenido en el modal
-  modalContent.innerHTML = detalleHTML;
-
-  // Mostrar el modal
-  const modal = document.getElementById('product-detail-modal');
-  modal.style.display = 'block';
-  }
-}
-
-
 function productoDetails(nombre, imagen, categoria, precio, descripcion) {
 
   const modalContent = document.getElementById('product-detail-content');
@@ -412,7 +379,7 @@ function productoDetails(nombre, imagen, categoria, precio, descripcion) {
         <h3>${nombre}</h3>
         <p class="card-text">${categoria}</p>
         <p class="card-text"><strong>Precio:</strong> ${precio}</p>
-        <p class="card-text"> ${descripcion}</p>
+        <p class="card-text" style="text-align: justify;"> ${descripcion}</p>
         <button type="button" class="btn btn-secondary" onclick="closeProductoModal()">Cerrar</button>
       </div>
     </div>
